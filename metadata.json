@@ -1,0 +1,6 @@
+{
+  "name": "Gestion Centre Deuxième Chance",
+  "description": "Application moderne et autonome de gestion d'un centre de deuxième chance sur réseau local (Wi-Fi/Ethernet) avec PC serveur centralisé, base de données locale et accès multi-appareils (PC et smartphones).",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,20 @@
+{
+  "appId": "ma.centre2chance.mobile",
+  "appName": "Gestion Centre 2e Chance",
+  "webDir": "dist",
+  "bundledWebRuntime": false,
+  "server": {
+    "cleartext": true,
+    "allowNavigation": [
+      "192.168.*.*",
+      "10.*.*.*",
+      "172.*.*.*",
+      "localhost"
+    ]
+  },
+  "plugins": {
+    "BarcodeScanner": {
+      "cameraPermissionText": "L'application a besoin de la caméra pour scanner le QR Code du serveur local."
+    }
+  }
+}

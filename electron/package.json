@@ -1,0 +1,36 @@
+{
+  "name": "gestion-centre-deuxieme-chance",
+  "version": "1.0.0",
+  "description": "Application Serveur Local - Gestion Centre Deuxième Chance",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "dist": "electron-builder --win --x64"
+  },
+  "build": {
+    "appId": "ma.centre2chance.gestion",
+    "productName": "Gestion Centre Deuxième Chance",
+    "directories": {
+      "output": "dist-electron"
+    },
+    "win": {
+      "target": ["nsis"],
+      "icon": "icon.ico",
+      "artifactName": "Gestion_Centre_Deuxieme_Chance_Setup.${ext}"
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true,
+      "shortcutName": "Gestion Centre Deuxième Chance",
+      "runAfterFinish": true
+    }
+  },
+  "dependencies": {
+    "electron": "^33.0.0"
+  },
+  "devDependencies": {
+    "electron-builder": "^25.1.8"
+  }
+}
